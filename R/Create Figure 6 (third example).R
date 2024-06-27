@@ -65,7 +65,7 @@ kld_inconsistency(node = back_calc,
                   outcome = "Standardised mean difference")
 
 # Opinion elicitation threshold (tau = 0.17)
-tiff("./30_Analysis & Results/Figure 6.tiff",
+tiff("./Figures/Figure 6.tiff",
      height = 20,
      width = 35,
      units = "cm",

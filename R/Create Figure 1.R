@@ -8,17 +8,13 @@
 #*******************************************************************************
 
 
-## Load the development version
-#devtools::install_github("LoukiaSpin/rnmamod", force = TRUE)
-
-
 ## Load libraries
 list.of.packages <- c("rnmamod", "gemtc", "stringr")
 lapply(list.of.packages, require, character.only = TRUE); rm(list.of.packages)
 
 
 ## Load function
-source("./30_Analysis & Results/Functions/convert_long_to_wide_function.R")
+source("./R/convert_long_to_wide_function.R")
 
 
 ## Load datasets
@@ -33,7 +29,7 @@ data("parkinson")
 
 
 ## Panel of three networks
-tiff("./30_Analysis & Results/Figure 1.tiff",
+tiff("./Figures/Figure 1.tiff",
      height = 20,
      width = 37,
      units = "cm",

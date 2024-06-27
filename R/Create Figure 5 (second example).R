@@ -13,8 +13,7 @@
 
 
 ## Load libraries
-list.of.packages <- c("rnmamod", "ggplot2")
-lapply(list.of.packages, require, character.only = TRUE); rm(list.of.packages)
+library("rnmamod")
 
 
 ## Collect *node-splitting* results from publication (Table 3 in Dias et al., 2010; PMID: 20213715)
@@ -48,7 +47,7 @@ res2 <- data.frame(treat_comp, direct_mean, direct_sd, indirect_mean, indirect_s
 
 ## Apply framework
 # Reference threshold at 0.10 
-tiff("./30_Analysis & Results/Figure 5.tiff",
+tiff("./Figures/Figure 5.tiff",
      height = 20,
      width = 35,
      units = "cm",

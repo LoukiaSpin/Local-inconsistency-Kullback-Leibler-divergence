@@ -47,7 +47,7 @@ res1 <- data.frame(treat_comp, direct_mean, direct_sd, indirect_mean, indirect_s
 
 ## Apply framework
 # Reference threshold at 0.10 
-tiff("./30_Analysis & Results/Figure 4.tiff",
+tiff("./Figures/Figure 4.tiff",
      height = 20,
      width = 35,
      units = "cm",

@@ -17,16 +17,12 @@ list.of.packages <- c("rnmamod", "ggpubr")
 lapply(list.of.packages, require, character.only = TRUE); rm(list.of.packages)
 
 
-## Load functions
-source("./30_Analysis & Results/Functions/hyperparameters.incons.prior.R")
-
-
 ## Example 1 (thrombolytics networks)
 # Outcome type: 'all-cause mortality', Interventions type: 'pharma vs non-pharma' (angioplasty)
 table_tau2_prior(measure = "OR") # Find the distribution in the Table
 
 # Derive the log-normal distribution for tau2_omega (median: 0.03)
-hyperparameters_incons_prior(mean_tau2 = -2.92,
+inconsistency_variance_prior(mean_tau2 = -2.92,
                              sd_tau2 = 1.02, 
                              mean_scale = 0.10, # one-tenth
                              measure = "OR")
@@ -49,7 +45,7 @@ p1 <- heter_density_plot("lognormal",
 table_tau2_prior(measure = "OR") # Find the distribution in the Table
 
 # Derive the log-normal distribution for tau2_omega (median: 0.03)
-hyperparameters_incons_prior(mean_tau2 = -2.28,
+inconsistency_variance_prior(mean_tau2 = -2.28,
                              sd_tau2 = 1.71, 
                              mean_scale = 0.10, # one-tenth
                              measure = "OR")
@@ -71,14 +67,14 @@ p2 <- heter_density_plot("lognormal",
 # Outcome type: 'signs/symptoms reflecting continuation/end of condition', Interventions type: 'pharma vs pbo/ctrl' 
 table_tau2_prior(measure = "SMD", area = "other") # Find the distribution in the Table
 
-# Derive the location-scale t prior for tau2_omega (median: 0.07)
-hyperparameters_incons_prior(mean_tau2 = -3.00,
+# Derive the location-scale t prior for log tau2_omega (median: 0.07)
+inconsistency_variance_prior(mean_tau2 = -3.00,
                              sd_tau2 = 2.50, 
                              mean_scale = 0.10, # one-tenth
                              measure = "SMD")
 
-# Density plot of tau2 and tau2_omega
-p3 <- heter_density_plot("lognormal", 
+# Density plot of log tau2 and log tau2_omega
+p3 <- heter_density_plot("logt", 
                          heter_prior1 = c(-3.00, 2.50), # tau2
                          heter_prior2 = c(-5.30, 3.23), # tau2_omega
                          heter2 = "tau_omega",
@@ -91,7 +87,7 @@ p3 <- heter_density_plot("lognormal",
 
 
 ## Bring all together in a 2x2 panel
-tiff("./30_Analysis & Results/Figure 3.tiff",
+tiff("./Figures/Figure 3.tiff",
      height = 20,
      width = 35,
      units = "cm",

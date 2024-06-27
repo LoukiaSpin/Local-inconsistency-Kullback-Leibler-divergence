@@ -17,10 +17,6 @@ list.of.packages <- c("rnmamod", "ggpubr")
 lapply(list.of.packages, require, character.only = TRUE); rm(list.of.packages)
 
 
-## Load functions
-source("./30_Analysis & Results/Functions/hyperparameters.incons.prior.R")
-
-
 ## Illustrate the 'reference threshold'
 # Fictional dataset (log ORs)
 dataset <- data.frame(comp = "B vs A", 
@@ -57,7 +53,7 @@ p2 <- heter_density_plot("halfnormal",
 table_tau2_prior(measure = "OR")
 
 # Generate the LN prior for tau2_omega (median: 0.03)
-hyperparameters_incons_prior(mean_tau2 = -2.56,
+inconsistency_variance_prior(mean_tau2 = -2.56,
                              sd_tau2 = 1.74, 
                              mean_scale = 0.10, # one-tenth
                              measure = "OR")
@@ -79,13 +75,13 @@ p3 <- heter_density_plot("lognormal",
 # General healthcare field for SMD: see Table
 table_tau2_prior(measure = "SMD", area = "other") # same hyperparameters, regardless of 'area'
 
-# Generate the location-scale t prior for tau2_omega (median: 0.06)
-hyperparameters_incons_prior(mean_tau2 = -3.44,
+# Generate the location-scale t prior for log tau2_omega (median: 0.06)
+inconsistency_variance_prior(mean_tau2 = -3.44,
                              sd_tau2 = 2.59, 
                              mean_scale = 0.10, # one-tenth
                              measure = "SMD")
 
-# Density plot of tau2 and tau2_omega
+# Density plot of log tau2 and log tau2_omega
 p4 <- heter_density_plot("logt", 
                          heter_prior1 = c(-3.44, 2.59), # tau2
                          heter_prior2 = c(-5.74, 3.34), # tau2_omega
@@ -99,7 +95,7 @@ p4 <- heter_density_plot("logt",
 
 
 ## Bring all together in a 2x2 panel
-tiff("./30_Analysis & Results/Figure 2.tiff",
+tiff("./Figures/Figure 2.tiff",
      height = 20,
      width = 40,
      units = "cm",
