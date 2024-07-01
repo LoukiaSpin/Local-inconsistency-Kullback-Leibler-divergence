@@ -46,7 +46,6 @@ res1 <- data.frame(treat_comp, direct_mean, direct_sd, indirect_mean, indirect_s
 
 
 ## Apply framework
-# Reference threshold at 0.10 
 tiff("./Figures/Figure S1.tiff",
      height = 20,
      width = 35,
@@ -54,19 +53,7 @@ tiff("./Figures/Figure S1.tiff",
      compression = "lzw",
      res = 600)
 kld_inconsistency_user(dataset = res1, 
-                       threshold = 0.10, 
+                       threshold = 0.64, 
                        level = 0.1,
-                       outcome = "Odds ratio (logarithmic scale)")
+                       outcome = "Odds ratio (logarithmic scale)")$Density_plot
 dev.off()
-
-# Opinion elicitation threshold (tau = 0.08)
-kld_inconsistency_user(dataset = res1, 
-                       threshold = 0.08, 
-                       level = 0.1,
-                       outcome = "Odds ratio (logarithmic scale)")
-
-# Empirical threshold based on inconsistency variance (tau = 0.03)
-kld_inconsistency_user(dataset = res1, 
-                       threshold = 0.03, 
-                       level = 0.1,
-                       outcome = "Odds ratio (logarithmic scale)")
