@@ -32,5 +32,3 @@ kld_inconsistency(node = result.ns,
                   threshold = 0.64,
                   outcome = "Mean difference")$Density_plot
 dev.off()
-
-
