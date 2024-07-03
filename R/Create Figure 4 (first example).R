@@ -1,7 +1,7 @@
 #*******************************************************************************
 #*
-#*                       Creating Figure 3 of Manuscript                                                                                                                                                                  
-#*      (Kullback-Leibler divergence results - Example 1 on thrombolytics)                                                                                                                                         
+#*                       Creating Figure 4 of Manuscript                                                                                                                                                                  
+#*    (Contribution to total information loss - Example 1 on thrombolytics)                                                                                                                                                   
 #*
 #* Author: Loukia M. Spineli 
 #* Date: July 2024
@@ -46,7 +46,7 @@ res1 <- data.frame(treat_comp, direct_mean, direct_sd, indirect_mean, indirect_s
 
 
 ## Apply framework
-tiff("./Figures/Figure 3.tiff",
+tiff("./Figures/Figure 4.tiff",
      height = 20,
      width = 35,
      units = "cm",
@@ -55,5 +55,6 @@ tiff("./Figures/Figure 3.tiff",
 kld_inconsistency_user(dataset = res1, 
                        threshold = 0.64, 
                        level = 0.1,
-                       outcome = "Odds ratio (logarithmic scale)")$Density_plot
+                       axis_text_size = 12,
+                       outcome = "Odds ratio (logarithmic scale)")$Barplot
 dev.off()

@@ -64,7 +64,7 @@ mtext(paste("b)  Smoking cessation"), 3, line = 0, cex = 1.1, font = 2)
 
 par(mar = c(0.2, 14, 0.2, 14))
 netplot(data = convert_long_to_wide(dataset = parkinson),
-        drug_names = c("placebo", "ropinirole", "pramipexole", "bromocriptine", "cabergoline"),
+        drug_names = c("placebo", "pramipexole", "ropinirole", "bromocriptine", "cabergoline"),
         show_multi = TRUE,
         node_frame_color = "plum1",
         node_frame_width = 2,

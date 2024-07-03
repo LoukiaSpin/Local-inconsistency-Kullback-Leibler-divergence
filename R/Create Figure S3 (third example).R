@@ -1,7 +1,7 @@
 #*******************************************************************************
 #*
-#*                       Creating Figure 5 of Manuscript                                                                                                                                           
-#*   (Kullback-Leibler divergence results - Example 3 on Parkinson's disease)                                                                                                                                                
+#*                       Creating Figure S3 of Manuscript                                                                                                                                           
+#*  (Contribution to total information loss - Example 3 on Parkinson's disease)                                                                                                                                                 
 #*
 #* Author: Loukia M. Spineli 
 #* Date: July 2024
@@ -22,7 +22,7 @@ result.ns <- readRDS(system.file('extdata/parkinson.ns.rds', package = 'gemtc'))
 
 
 ## Inconsistency interpretation framework
-tiff("./Figures/Figure 5.tiff",
+tiff("./Figures/Figure S3.tiff",
      height = 20,
      width = 35,
      units = "cm",
@@ -30,5 +30,5 @@ tiff("./Figures/Figure 5.tiff",
      res = 600)
 kld_inconsistency(node = result.ns,
                   threshold = 0.64,
-                  outcome = "Mean difference")$Density_plot
+                  outcome = "Mean difference")$Barplot
 dev.off()

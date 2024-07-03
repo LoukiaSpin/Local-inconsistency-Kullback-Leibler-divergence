@@ -1,6 +1,6 @@
 #*******************************************************************************
 #*
-#*                       Creating Figure 4 of Manuscript                                                                                                                                           
+#*                       Creating Figure 5 of Manuscript                                                                                                                                           
 #*    (Kullback-Leibler divergence results - Example 2 on smoking cessation)                                                                                                                                             
 #*
 #* Author: Loukia M. Spineli 
@@ -46,7 +46,7 @@ res2 <- data.frame(treat_comp, direct_mean, direct_sd, indirect_mean, indirect_s
 
 
 ## Apply framework
-tiff("./Figures/Figure 4.tiff",
+tiff("./Figures/Figure 5.tiff",
      height = 20,
      width = 35,
      units = "cm",
