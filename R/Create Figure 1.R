@@ -3,7 +3,6 @@
 #*                       Creating Figure 1 of Manuscript                                                                                                                                           
 #*                   (Networks of the investigated examples)                                                                               
 #*
-#* Author: Loukia M. Spineli 
 #* Date: July 2024
 #*******************************************************************************
 

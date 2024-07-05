@@ -3,7 +3,6 @@
 #*                       Creating Figure 6 of Manuscript                                                                                                                                           
 #*   (Kullback-Leibler divergence results - Example 3 on Parkinson's disease)                                                                                                                                                
 #*
-#* Author: Loukia M. Spineli 
 #* Date: July 2024
 #*******************************************************************************
 

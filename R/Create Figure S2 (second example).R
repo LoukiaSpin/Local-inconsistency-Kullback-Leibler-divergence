@@ -3,7 +3,6 @@
 #*                       Creating Figure S2 of Manuscript                                                                                                                                           
 #*  (Contribution to total information loss - Example 2 on smoking cessation)                                                                                                                                               
 #*
-#* Author: Loukia M. Spineli 
 #* Date: July 2024
 #*******************************************************************************
 

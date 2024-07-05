@@ -3,7 +3,6 @@
 #*                       Creating Figure 4 of Manuscript                                                                                                                                                                  
 #*    (Contribution to total information loss - Example 1 on thrombolytics)                                                                                                                                                   
 #*
-#* Author: Loukia M. Spineli 
 #* Date: July 2024
 #*******************************************************************************
 

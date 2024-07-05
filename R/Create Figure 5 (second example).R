@@ -3,7 +3,6 @@
 #*                       Creating Figure 5 of Manuscript                                                                                                                                           
 #*    (Kullback-Leibler divergence results - Example 2 on smoking cessation)                                                                                                                                             
 #*
-#* Author: Loukia M. Spineli 
 #* Date: July 2024
 #*******************************************************************************
 

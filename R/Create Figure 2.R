@@ -3,7 +3,6 @@
 #*                       Creating Figure 2 of Manuscript                                                                                                                                           
 #*           (Setting the threshold of acceptably low inconsistency)                                                                                                                                           
 #*
-#* Author: Loukia M. Spineli 
 #* Date: July 2024
 #*******************************************************************************
 

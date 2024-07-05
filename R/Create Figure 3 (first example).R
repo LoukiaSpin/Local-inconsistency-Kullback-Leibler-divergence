@@ -3,7 +3,6 @@
 #*                       Creating Figure 3 of Manuscript                                                                                                                                                                  
 #*      (Kullback-Leibler divergence results - Example 1 on thrombolytics)                                                                                                                                         
 #*
-#* Author: Loukia M. Spineli 
 #* Date: July 2024
 #*******************************************************************************
 
