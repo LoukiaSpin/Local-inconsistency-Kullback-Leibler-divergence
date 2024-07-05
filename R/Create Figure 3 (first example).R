@@ -54,6 +54,6 @@ tiff("./Figures/Figure 3.tiff",
      res = 600)
 kld_inconsistency_user(dataset = res1, 
                        threshold = 0.64, 
-                       level = 0.1,
+                       level = 0.05,
                        outcome = "Odds ratio (logarithmic scale)")$Density_plot
 dev.off()

@@ -54,7 +54,7 @@ tiff("./Figures/Figure 4.tiff",
      res = 600)
 kld_inconsistency_user(dataset = res1, 
                        threshold = 0.64, 
-                       level = 0.1,
+                       level = 0.05,
                        axis_text_size = 12,
                        outcome = "Odds ratio (logarithmic scale)")$Barplot
 dev.off()
