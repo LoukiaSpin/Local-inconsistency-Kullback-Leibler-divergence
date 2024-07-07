@@ -7,8 +7,8 @@
 #*******************************************************************************
 
 
-## Download development version of 'rnmamod'
-#devtools::install_github("LoukiaSpin/rnmamod")
+## For the moment, please, use the development version of 'rnmamod'
+devtools::install_github("LoukiaSpin/rnmamod")
 
 
 ## Load libraries
