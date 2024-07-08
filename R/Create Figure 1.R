@@ -18,7 +18,8 @@ source("./R/convert_long_to_wide_function.R")
 
 ## Load datasets
 # Example 1 - Thrombolytics network
-data("thrombolytic")
+load("./R/Thrombolytics_Dias_dataset.RData")
+treatments1 <- c("SK", "t-PA", "Acc t-PA", "SK+t-PA", "r-PA", "TNK", "PTCA", "UK", "ASPAC")
 
 # Example 2 - Smoking cessation network
 data("smoking")
@@ -37,8 +38,8 @@ tiff("./Figures/Figure 1.tiff",
 layout(matrix(c(1, 2, 3, 3), 2, 2, byrow = TRUE))
 
 par(mai = c(0.2, 2, 0.2, 0.2))
-netplot(data = convert_long_to_wide(dataset = thrombolytic),
-        drug_names = thrombolytic$treatments$id,
+netplot(data = Thrombolytics_Dias_dataset, 
+        drug_names = treatments1,
         show_multi = TRUE,
         node_frame_color = "pink",
         node_frame_width = 2,
