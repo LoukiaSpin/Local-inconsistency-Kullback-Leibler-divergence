@@ -3,6 +3,7 @@
 #*                       Creating Figure 3 of Manuscript                                                                                                                                                                  
 #*      (Kullback-Leibler divergence results - Example 1 on thrombolytics)                                                                                                                                         
 #*
+#* Author: Loukia M. Spineli
 #* Date: July 2024
 #*******************************************************************************
 
@@ -50,7 +51,7 @@ tiff("./Figures/Figure 3.tiff",
      width = 35,
      units = "cm",
      compression = "lzw",
-     res = 600)
+     res = 300)
 kld_inconsistency_user(dataset = res1, 
                        threshold = 0.64, 
                        level = 0.05,

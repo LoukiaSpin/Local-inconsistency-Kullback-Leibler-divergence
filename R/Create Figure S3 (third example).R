@@ -3,6 +3,7 @@
 #*                       Creating Figure S3 of Manuscript                                                                                                                                           
 #*  (Contribution to total information loss - Example 3 on Parkinson's disease)                                                                                                                                                 
 #*
+#* Author: Loukia M. Spineli
 #* Date: July 2024
 #*******************************************************************************
 

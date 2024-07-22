@@ -3,6 +3,7 @@
 #*                       Creating Figure 1 of Manuscript                                                                                                                                           
 #*                   (Networks of the investigated examples)                                                                               
 #*
+#* Author: Loukia M. Spineli
 #* Date: July 2024
 #*******************************************************************************
 
@@ -34,7 +35,7 @@ tiff("./Figures/Figure 1.tiff",
      width = 37,
      units = "cm",
      compression = "lzw",
-     res = 600)
+     res = 300)
 layout(matrix(c(1, 2, 3, 3), 2, 2, byrow = TRUE))
 
 par(mai = c(0.2, 2, 0.2, 0.2))

@@ -3,6 +3,7 @@
 #*                       Creating Figure 2 of Manuscript                                                                                                                                           
 #*           (Setting the threshold of acceptably low inconsistency)                                                                                                                                           
 #*
+#* Author: Loukia M. Spineli
 #* Date: July 2024
 #*******************************************************************************
 
@@ -61,7 +62,7 @@ tiff("./Figures/Figure 2.tiff",
      width = 40,
      units = "cm",
      compression = "lzw",
-     res = 600)
+     res = 300)
 ggarrange(p1, p2,
           ncol = 2, nrow = 1,
           labels = c("a)", "b)"),

@@ -3,6 +3,7 @@
 #*                       Creating Figure S1 of Manuscript                                                                                                                                           
 #*        (Kullback-Leibler divergence for back-calculation - Example 1)                                                                                                                                                 
 #*
+#* Author: Loukia M. Spineli
 #* Date: July 2024
 #*******************************************************************************
 

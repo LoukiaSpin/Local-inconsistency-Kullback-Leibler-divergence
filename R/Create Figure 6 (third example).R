@@ -3,6 +3,7 @@
 #*                       Creating Figure 6 of Manuscript                                                                                                                                           
 #*   (Kullback-Leibler divergence results - Example 3 on Parkinson's disease)                                                                                                                                                
 #*
+#* Author: Loukia M. Spineli
 #* Date: July 2024
 #*******************************************************************************
 
@@ -26,7 +27,7 @@ tiff("./Figures/Figure 6.tiff",
      width = 35,
      units = "cm",
      compression = "lzw",
-     res = 600)
+     res = 300)
 kld_inconsistency(node = result.ns,
                   threshold = 0.64,
                   outcome = "Mean difference")$Density_plot

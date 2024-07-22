@@ -1,4 +1,11 @@
-#' Function to turn a gemtc dataset (long format) into an rnmamod dataset (wide format)
+#*******************************************************************************
+#*
+#*                Function to turn a gemtc dataset (long format)                                
+#*                     into an rnmamod dataset (wide format)                                                                                                                                                                    
+#*
+#* Author: Loukia M. Spineli
+#* Date: July 2024
+#*******************************************************************************
 
 convert_long_to_wide <- function (dataset) {
 
